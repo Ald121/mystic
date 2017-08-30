@@ -5,6 +5,13 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link href="styles/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="styles/js/jquery.min.js"></script>
+     <link href="styles/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+     <script type="text/javascript" src="styles/js/jquery.min.js"></script>
+      <script type="text/javascript" src="styles/js/modernizr.custom.28468.js"></script>
+      <script type="text/javascript" src="styles/js/jquery.cslider.js"></script>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -15,41 +22,7 @@
     <!-- endbuild -->
   </head>
   <body ng-app="mysticApp">
-    <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <a class="navbar-brand" href="#/">mystic</a>
-          </div>
-
-          <div class="collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
-
+       <div app-view-segment="0" layout="column" layout-fill></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -71,6 +44,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route-segment/build/angular-route-segment.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
